@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Kanit:wght@800&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allianz Arena Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "IBM Plex Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-over {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 4px black;
+            font-size: 32px;
+            font-weight: 300;
+            transform: translateY(-50%);
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .custom-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-btn:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .box {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .box h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .middle-element {
+            flex-grow: 1;
+        }
+
+        .middle-element h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .middle-element p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .buttons .btn {
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .vid {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .vid video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 576px) {
+            .main-image img {
+            width: 100%;
+            height: 200px;
+        }
+
+
+            .box h3 {
+                font-size: 16px;
+            }
+
+            .buttons .btn {
+                font-size: 12px;
+            }
+            .text-over {
+            display: none;
+        }
+        }
+        
+        .continue-shopping-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: black;
+      cursor: pointer;
+      margin-left: 30px;
+      transition: all 0.3s ease;
+      margin-top: 30px;
+      position: absolute;
+    }
+
+    .continue-shopping-btn i {
+      margin-right: 10px;
+    }
+
+    .continue-shopping-btn:hover {
+      background-color: black;
+      color: white;
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="main-image">
+        <button class="continue-shopping-btn"  onclick="goBack()">
+            <i class="bi bi-arrow-left"></i> back
+          </button>
+        
+        <img src="https://c4.wallpaperflare.com/wallpaper/829/224/870/allianz-arena-stadium-night-lights-wallpaper-preview.jpg" alt="Allianz Arena">
+        <div class="text-over">Allianz Arena Tickets</div>
+    </div>
+
+    <div class="container">
+        <p>SeatPick has the most comprehensive Allianz Arena Seating plan on the web. On SeatPick you can find out where it's recommended to sit at <a href="">Allianz Arena</a> for Bayern Munich and Euro 2024 matches, before you buy your tickets...</p>
+
+        <div class="vid">
+            <video autoplay loop muted playsinline>
+                <source src="allianz vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="stad img display-flex ">
+            <img src="allianz stad image.JPG" alt="Allianz Arena Image" style="width: 90%; height: auto; margin-top: 20px; border-radius: 10px;margin-left: 10px; ">
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-danger">VIP</button>
+            <button class="btn btn-primary">Cat 1</button>
+            <button class="btn btn-success">Cat 2</button>
+            <button class="btn btn-warning">Cat 3</button>
+            <button class="btn btn-info">Fans First</button>
+        </div>
+
+        <h3>Upcoming Allianz Arena Events</h3>
+        <div class="custom-btn">
+            <div class="box">
+                <p>Wed</p>
+                <h3>Jan 15</h3>
+                <p>2025</p>
+            </div>
+            <div class="middle-element">
+                <h3>Bayern Munich vs Hoffenheim</h3>
+                <p>20:30 · Allianz Arena</p>
+                <p class="text-success">From $61</p>
+            </div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+        <div class="custom-btn">
+            <div class="box">
+                <p>Wed</p>
+                <h3>Jan 15</h3>
+                <p>2025</p>
+            </div>
+            <div class="middle-element">
+                <h3>Bayern Munich vs Hoffenheim</h3>
+                <p>20:30 · Allianz Arena</p>
+                <p class="text-success">From $61</p>
+            </div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+        <ul>
+            <h4>Other Stadiums</h4>
+            <li><a href="campno-arena.html">El Camp Nou stadium</a></li>
+            <li><a href="#">san siro</a></li>
+            <li><a href="santiago">el santiago bernabeu</a></li>
+            <li><a href="#">etihad stadium</a></li>
+        </ul>
+    </div>
+</body>
+</html>
